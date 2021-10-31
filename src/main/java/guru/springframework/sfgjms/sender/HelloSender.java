@@ -22,7 +22,7 @@ public class HelloSender {
         HelloWorldMessage message = HelloWorldMessage
                 .builder()
                 .id(UUID.randomUUID())
-                .message("Sanya, ti chto chitaesh moi ishodniki?")
+                .message("Random message")
                 .build();
 
         jmsTemplate.convertAndSend(JmsConfig.MY_QUEUE, message);
